@@ -13,6 +13,8 @@
 		B52639BD2A73CC720022C016 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B52639BB2A73CC720022C016 /* Main.storyboard */; };
 		B52639BF2A73CC730022C016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B52639BE2A73CC730022C016 /* Assets.xcassets */; };
 		B52639C22A73CC730022C016 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B52639C02A73CC730022C016 /* LaunchScreen.storyboard */; };
+		B5E4313D2A73D4470097E169 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4313C2A73D4470097E169 /* AddViewController.swift */; };
+		B5E4313F2A73E7C10097E169 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E4313E2A73E7C10097E169 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B52639BE2A73CC730022C016 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B52639C12A73CC730022C016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B52639C32A73CC730022C016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5E4313C2A73D4470097E169 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		B5E4313E2A73E7C10097E169 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				B52639B52A73CC720022C016 /* AppDelegate.swift */,
 				B52639B72A73CC720022C016 /* SceneDelegate.swift */,
 				B52639B92A73CC720022C016 /* ViewController.swift */,
+				B5E4313C2A73D4470097E169 /* AddViewController.swift */,
+				B5E4313E2A73E7C10097E169 /* Extensions.swift */,
 				B52639BB2A73CC720022C016 /* Main.storyboard */,
 				B52639BE2A73CC730022C016 /* Assets.xcassets */,
 				B52639C02A73CC730022C016 /* LaunchScreen.storyboard */,
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5E4313F2A73E7C10097E169 /* Extensions.swift in Sources */,
 				B52639BA2A73CC720022C016 /* ViewController.swift in Sources */,
 				B52639B62A73CC720022C016 /* AppDelegate.swift in Sources */,
+				B5E4313D2A73D4470097E169 /* AddViewController.swift in Sources */,
 				B52639B82A73CC720022C016 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,9 +309,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tmf.Reminder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -328,9 +339,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tmf.Reminder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
