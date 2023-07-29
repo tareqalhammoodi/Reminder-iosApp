@@ -64,9 +64,7 @@ class ViewController: UIViewController {
     }
     
     @objc func addTapped() {
-        guard let vc = storyboard?.instantiateViewController(identifier: "add") as? AddViewController else {
-            return
-        }
+        let vc = AddViewController()
         vc.completion = { title, body, date in
             DispatchQueue.main.async { [weak self] in
                 self?.navigationController?.popToRootViewController(animated: true)
@@ -90,7 +88,11 @@ class ViewController: UIViewController {
                 })
             }
         }
-        present(UINavigationController(rootViewController: vc), animated: true)
+        if let sheet = vc.sheetPresentationController {
+            sheet.detents = [.medium()]
+            sheet.preferredCornerRadius = 20
+        }
+        present(vc, animated: true, completion: nil)
     }
 
 }

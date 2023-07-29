@@ -61,6 +61,7 @@ class AddViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         title = "New Reminder"
+        view.backgroundColor = .systemBackground
         titleField.delegate = self
         bodyField.delegate = self
         saveButton.addTarget(self,
